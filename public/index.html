@@ -54,6 +54,37 @@
       </p>
     </div>
 
+    <!-- <script src="https://www.gstatic.com/firebasejs/5.4.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyA6WJvsAjC09zDjfrNf5eOQsy1zmj_S_Rc",
+        authDomain: "hostel-social.firebaseapp.com",
+        databaseURL: "https://hostel-social.firebaseio.com",
+        projectId: "hostel-social",
+        storageBucket: "hostel-social.appspot.com",
+        messagingSenderId: "97734006740"
+      };
+      firebase.initializeApp(config);
+
+      let clickCounter = 0;
+      const database = firebase.database();
+
+      $("#firebase-test").on("click", function() {
+        // Add 1 to clickCounter
+        clickCounter++;
+        console.log(clickCounter);
+        // **** Store Click Data to Firebase in a JSON property called clickCount *****
+        // **** Note how we are using the Firebase .set() method ****
+        // **** .ref() refers to the path you want to save your data to
+        // **** Since we left .ref() blank, it will save to the root directory
+        database.ref().set({
+          clickCount: clickCounter
+        });
+
+
+    </script> -->
+
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {
