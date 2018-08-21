@@ -70,8 +70,6 @@ class SignUpForm extends Component {
       username === "";
 
     return (
-      <div>
-
         <form onSubmit={this.onSubmit}>
           <input
             value={username}
@@ -103,17 +101,19 @@ class SignUpForm extends Component {
 
           { error && <p>{error.message}</p> }
         </form>
-
-        <p> Don't have an account?
-          {' '}
-          <Link to={routes.SIGN_UP}>Sign Up</Link>
-        </p>
-      </div>
     )
-
   }
+}
+
+const SignUpLink = () => {
+  return (
+    <p> Don't have an account?
+      {' '}
+      <Link to={routes.SIGN_UP}>Sign Up</Link>
+    </p>
+  )
 }
 
 export default withRouter(SignUp);
 
-export { SignUpForm, SignUp };
+export { SignUpForm, SignUpLink };
