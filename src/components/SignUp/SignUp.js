@@ -33,25 +33,25 @@ class SignUpForm extends Component {
 
   onSubmit = (event) => {
     const {
+      history,
+    } = this.props;
+
+    const {
       username,
       email,
       passwordOne,
     } = this.state;
 
-    const {
-      history,
-    } = this.props;
-
     auth.doCreateUserWithEmailAndPassword(email, passwordOne)
       .then(authUser => {
-        this.setState({... INITIAL_STATE});
-        history.push(routes.HOME); // this will redirect you to the homepage
+        this.setState({ ...INITIAL_STATE });
+        history.push(routes.HOME);
       })
       .catch(error => {
         this.setState(byPropKey('error', error));
       });
 
-      event.preventDefault();
+    event.preventDefault();
   }
 
   render() {

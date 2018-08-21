@@ -33,6 +33,8 @@ class SignInForm extends Component {
   }
 
   onSubmit = (event) => {
+    event.preventDefault();
+
     const {
       email, password,
     } = this.state;
