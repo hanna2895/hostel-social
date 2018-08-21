@@ -4,7 +4,6 @@ import SignOutButton from '../SignOut/SignOut';
 import * as routes from '../../constants/routes';
 
 const Navigation = ({ authUser }) => {
-  console.log(authUser, 'this is porps from navigation')
   return (
     <div>
       { authUser
@@ -16,7 +15,6 @@ const Navigation = ({ authUser }) => {
 }
 
 const NavigationAuth = () => {
-  console.log('navigation auth is being called')
   return (
     <div>
       <ul>
@@ -30,7 +28,6 @@ const NavigationAuth = () => {
 }
 
 const NavigationNonAuth = () => {
-  console.log('navigation nonauth is being called')
   return (
     <div>
       <ul>
