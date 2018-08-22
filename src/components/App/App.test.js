@@ -10,14 +10,14 @@ import Navigation from '../Navigation/Navigation'
 //   ReactDOM.unmountComponentAtNode(div);
 // });
 
-describe('App', () => {
-  let wrapper;
-  beforeEach(() => {
-    wrapper = shallow(<App />)
-  });
-
-  it('should render the Navigation component', () => {
-    expect(wrapper.containsMatchingElement(<Navigation />)).toEqual(true);
-  });
-  
-});
+// describe('App', () => {
+//   let wrapper;
+//   beforeEach(() => {
+//     wrapper = shallow(<App />)
+//   });
+//
+//   it('should render the Navigation component', () => {
+//     expect(wrapper.containsMatchingElement(<Navigation />)).toEqual(true);
+//   });
+//
+// });

@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Account from './Account';
+import AccountPage from './Account';
 
 describe('Account', () => {
   let wrapper;

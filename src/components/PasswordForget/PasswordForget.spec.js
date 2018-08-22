@@ -1,11 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import PasswordForget from './PasswordForget';
+import PasswordForgetPage from './PasswordForget';
 
 describe('PasswordForget', () => {
   let wrapper;
   beforeEach(() => {
-    wrapper = shallow(<PasswordForget />)
+    wrapper = shallow(<PasswordForgetPage />)
   });
 
   it('should render a div', () => {
