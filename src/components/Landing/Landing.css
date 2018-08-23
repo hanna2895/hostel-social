@@ -1,0 +1,42 @@
+body {
+  /* background-image: url('./hostel2.jpg'); */
+  /* background-size: cover; */
+  /* background-position: relative; */
+  background-color: darkblue;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  font-family: 'Delius Unicase', cursive;
+  font-size: 10vh;
+}
+
+h2 {
+  color: white;
+  font-size: 5vh;
+}
+
+.sign-up-button {
+  color: white;
+  background-color: none;
+  transition: border 0.5s;
+  -webkit-transition: border 0.5s;
+  width: 19vw;
+  height: 7vh;
+  font-size: 3vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.sign-up-button:hover {
+  border: 3px solid white;
+  box-sizing: border-box;
+
+}
