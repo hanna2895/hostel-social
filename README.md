@@ -19,3 +19,6 @@ Tutorials and resources used:
 [Build your first Progressive Web App with React](https://engineering.musefind.com/build-your-first-progressive-web-app-with-react-8e1449c575cd)
 
 [Test-Driven Development with React, Jest, and Enzyme](https://testdriven.io/tdd-with-react-jest-and-enzyme-part-one)
+
+[A Complete Firebase in React Authentication Tutorial](https://www.robinwieruch.de/complete-firebase-authentication-react-tutorial/)
+*This also contains a good tutorial on how to modify the authentication to use redux, which will be helpful if I decide this application needs to use redux down the road* 
