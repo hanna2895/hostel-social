@@ -1,11 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Home from './Home';
+import HomePage from './Home';
 
 describe('Home', () => {
   let wrapper;
   beforeEach(() => {
-    wrapper = shallow(<Home />)
+    wrapper = shallow(<HomePage />)
   });
 
   it('should render a div', () => {
