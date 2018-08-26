@@ -3,6 +3,15 @@ import { Link, withRouter } from 'react-router-dom';
 import { auth, db } from '../../firebase';
 import * as routes from '../../constants/routes';
 
+// styles and UI components
+import '../../index.css';
+import './SignUp.css';
+import Paper from '@material-ui/core/Paper';
+import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
+
+import { SignInLink } from '../SignIn/SignIn';
+
 const INITIAL_STATE = {
   username: '',
   email: '',
@@ -13,9 +22,13 @@ const INITIAL_STATE = {
 
 const SignUp = ({history}) => {
     return (
-      <div>
-        <h1>Sign Up </h1>
-        <SignUpForm history={history} />
+      <div className="landing">
+        <Paper className="login-card">
+          <Link to={routes.LANDING} className="close">X</Link>
+          <h2>Sign Up </h2>
+          <SignUpForm history={history} />
+          <SignInLink />
+        </Paper>
       </div>
     )
 }
@@ -81,33 +94,41 @@ class SignUpForm extends Component {
 
     return (
         <form onSubmit={this.onSubmit}>
-          <input
+          <TextField
             value={username}
             onChange={event => this.setState(byPropKey('username', event.target.value))}
             type="text"
             placeholder="Full Name"
+            fullWidth
+            margin="normal"
           />
-          <input
+          <TextField
             value={email}
             onChange={event => this.setState(byPropKey('email', event.target.value))}
             type="text"
             placeholder="Email Address"
+            fullWidth
+            margin="normal"
           />
-          <input
+          <TextField
             value={passwordOne}
             onChange={event => this.setState(byPropKey('passwordOne', event.target.value))}
             type="password"
             placeholder="Password"
+            fullWidth
+            margin="normal"
           />
-          <input
+          <TextField
             value={passwordTwo}
             onChange={event => this.setState(byPropKey('passwordTwo', event.target.value))}
             type="password"
             placeholder="Confirm Password"
+            fullWidth
+            margin="normal"
           />
-          <button disabled={isInvalid} type="submit">
+          <Button variant="contained" color="primary" disabled={isInvalid} type="submit">
             Sign Up
-          </button>
+          </Button>
 
           { error && <p>{error.message}</p> }
         </form>

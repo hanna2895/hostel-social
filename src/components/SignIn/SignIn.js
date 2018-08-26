@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { withRouter } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 
 //styles and UI components
 import Paper from '@material-ui/core/Paper';
@@ -17,6 +17,7 @@ const SignInPage = ({history}) => {
   return (
     <div className="landing">
       <Paper className="login-card">
+        <Link to={routes.LANDING} className="close">X</Link>
         <h2> Sign In </h2>
         <SignInForm history={history} />
         <PasswordForgetLink />
@@ -82,7 +83,7 @@ class SignInForm extends Component {
           placeholder="Email Address"
           fullWidth
           onChange={event => this.setState(byPropKey('email', event.target.value))}
-          // margin="normal"
+          margin="normal"
         />
         <TextField
           id="password-input"
@@ -102,8 +103,18 @@ class SignInForm extends Component {
   }
 }
 
+const SignInLink = () => {
+  return (
+    <p> Already have an account?
+      {' '}
+      <Link to={routes.SIGN_IN}>Sign In</Link>
+    </p>
+  )
+}
+
 export default withRouter(SignInPage);
 
 export {
   SignInForm,
+  SignInLink,
 }
