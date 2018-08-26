@@ -1,15 +1,10 @@
-body {
-  /* background-image: url('./hostel2.jpg'); */
-  /* background-size: cover; */
-  /* background-position: relative; */
-  background-color: darkblue;
-  text-align: center;
-}
+
 
 h1 {
   color: white;
   font-family: 'Delius Unicase', cursive;
   font-size: 10vh;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.5);
 }
 
 h2 {

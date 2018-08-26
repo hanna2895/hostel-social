@@ -2,4 +2,24 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  text-align: center;
+  margin-top: -4vh;
+}
+
+/* landing, sign in, sign up styles */
+
+.landing {
+  padding-top: 10vh;
+  background-image: url('./components/images/sunset.jpg');
+  background-size: cover;
+  height: 94vh;
+  opacity: 0.8;
+}
+
+.login-card {
+  width: 70%;
+  margin: auto;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-bottom: 2vh;
 }
